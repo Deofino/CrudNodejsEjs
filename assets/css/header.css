@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+:root{
+    --primaryColor: #304BA4;
+    --background: #191823;
+    --accent: #AF64CA;
+    --backgroundLight: #86738D;
+}
+
+header{
+    background-color: var(--backgroundLight);
+    position: fixed;
+    top: 0;
+    max-height: 120px;
+    padding: 30px 20px;
+    width: 100%;
+    box-shadow: var(--accent) 0 0 10px;
+}
+header ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+header ul li a{
+    padding: 5px 10px;
+    transition: transform .2s
+}
+header ul li a:focus{
+    transform: scale(1.5);
+    font-weight: bolder;
+    color: var(--background);
+}

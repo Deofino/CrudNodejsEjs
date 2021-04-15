@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud - <%= title %></title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-  <h1>roi</h1>
+    <%- include('./static/header.ejs'); %>
+  <main>
+      <h1>CRUD com Nodejs</h1>
+      <p>Iremos criar um <strong>Crud</strong> com Nodejs, junto com o template engine EJS, e banco de dados Mongodb</p>
+    <hr>
+      <p>Estamos usando os <strong>modulos</strong> mongodb, nodemon, cors, express para o backend com node e o ejs</p>
+  </main>
 </body>
 </html>
