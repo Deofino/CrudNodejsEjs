@@ -24,7 +24,7 @@ body{
 }
 main{
     background-color: var(--backgroundLight);
-    padding: 40px 20px;
+    padding: 100px 20px;
     width: 100%;
     max-width: 900px;
     display: flex;
@@ -32,20 +32,20 @@ main{
     box-shadow: white 0 0 5px;
     border-radius: 3px;
     flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
 }
 main h1{
     font-size: 3.5em;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 main p{
-    margin-left: 15px;
     font-size: 1em;
-    margin-bottom: 10px;
 }
 main hr{
-    margin: 10px 15px;
+    margin: 20px 0px;
+    width: 100%;
     border-radius: 10px;
 }
 ul{

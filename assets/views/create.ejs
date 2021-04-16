@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud - <%= title %></title>
+    <link rel="stylesheet" href="css/create.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <%- include('./static/header.ejs'); %>
+    <main>
+        <h1>Create: inserindo dados</h1>
+        <form action="/create" method="POST" id="form">
+            <div class="alert">
+               
+            </div>
+            <input type="text" placeholder="seu nome" id="nome" required>
+            <input type="email" placeholder="seu email" id="email" required>
+            <input type="text" placeholder="seu assunto" id="assunto" required>
+            <textarea id="mensagem" rows="6" placeholder="sua mensagem" required></textarea>
+            <input type="submit" value="Create" >
+        </form>
+    </main>
+
+
+    <script src="js/create.js"></script>
+</body>
+</html>
