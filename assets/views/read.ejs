@@ -1,1 +1,47 @@
-<h1>read</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud - <%= title %></title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/read.css">
+</head>
+<body>
+    <%- include('./static/header.ejs'); %>
+    <main>
+        <h1>Read: consultando os dados</h1>
+        <% if(data.length != 0) { %>
+            <div class="overflow-scroll">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Assunto</th>
+                            <th scope="col">Mensagem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.forEach(el=>{ %>
+                            <tr>
+                                <td><%= el._id %></td>
+                                <td><%= el.nome %></td>
+                                <td><%= el.email %></td>
+                                <td><%= el.assunto %></td>
+                                <td><%= el.mensagem %></td>
+                            </tr> 
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        <% }else{ %>
+            <h2>Sem mensagens cadastradas no banco de dados.</h2>
+        <% } %>
+    </main>
+
+    <script src="js/read.js"></script>
+</body>
+</html>

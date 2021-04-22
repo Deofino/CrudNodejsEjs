@@ -10,6 +10,7 @@ header{
     background-color: var(--backgroundLight);
     position: fixed;
     top: 0;
+    z-index: 99;
     max-height: 120px;
     padding: 30px 20px;
     width: 100%;
