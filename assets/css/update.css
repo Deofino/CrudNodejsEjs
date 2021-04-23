@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+:root{
+    --primaryColor: #304BA4;
+    --background: #191823;
+    --accent: #AF64CA;
+    --backgroundLight: #86738D;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+    font-family: 'Roboto','Arial',sans-serif;
+    color: white;
+    display: flex;
+    height: 100vh;
+    padding-top: 120px;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main{
+    background-color: var(--backgroundLight);
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    position: relative;
+    margin: 0 10px;
+    box-shadow: white 0 0 5px;
+    border-radius: 3px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+main h1{
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+main p{
+    font-size: 1em;
+}
+main hr{
+    margin: 20px 0px;
+    width: 100%;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.overflow-scroll{
+    width: 100%;
+    overflow-x: auto;
+}
+table{
+    background-color: #191823;
+    border-spacing: 1;
+}
+table thead tr th{
+    background-color: #15255a;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+table tbody tr td{
+    width: 20%;
+    min-width: 120px;
+    padding: 5px 10px;
+    font-size: .9em;
+    font-weight: 300;
+    text-align: center;
+    word-wrap: break-word;
+}
+table tbody tr{
+    background-color: #3458cc;
+}
+table tbody tr:nth-child(even){
+    background-color: #2043b8;
+
+}
+table tbody tr td:first-child{
+    max-width: 70px !important;
+}
+td a{
+    text-decoration: underline;
+    font-weight: bolder;
+}
