@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 const mongodb = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
-const uriMongo = 'mongodb+srv://node1:33236882@teste.bkzkl.mongodb.net/node1';
+require('dotenv').config();
+console.log(process.env.URL_MONGO);
+const uriMongo = process.env.URL_MONGO;
 const port = process.env.port || 8000;
 const cors = require('cors');
 
